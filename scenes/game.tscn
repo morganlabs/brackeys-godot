@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://wpck2ohbu2ok"]
+[gd_scene load_steps=6 format=3 uid="uid://wpck2ohbu2ok"]
 
 [ext_resource type="PackedScene" uid="uid://b6kljyawjjvxn" path="res://scenes/player.tscn" id="1_wvik3"]
 [ext_resource type="Texture2D" uid="uid://ce0gvcfmbdc6" path="res://assets/sprites/world_tileset.png" id="2_2uhu4"]
+[ext_resource type="PackedScene" uid="uid://cj86jk2i6xo4u" path="res://scenes/platform.tscn" id="3_evd1e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_88kqv"]
 texture = ExtResource("2_2uhu4")
@@ -227,3 +228,6 @@ position = Vector2(-39, 0)
 position = Vector2(99, 0)
 zoom = Vector2(4, 4)
 position_smoothing_enabled = true
+
+[node name="Platform" parent="." instance=ExtResource("3_evd1e")]
+position = Vector2(0, -38)
